@@ -4,8 +4,8 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 
-import { BioSection, BioYear } from '../components/bio'
-import Section from '../components/section'
+import { BioSection, BioYear } from '../components/bio.js'
+import Section from '../components/section.js'
 
 function Page() {
   return (
