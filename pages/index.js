@@ -21,7 +21,7 @@ function Page() {
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Mohamad
+            Mohamad Youness
           </Heading>
           <p>Digital Craftsman ( 3D Artist / Developer / Animator )</p>
         </Box>
