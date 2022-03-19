@@ -1,0 +1,267 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Camera",
+            "rotation" : [
+                -0.6664265394210815,
+                0,
+                0,
+                0.745570719242096
+            ],
+            "translation" : [
+                9.126041412353516,
+                -2.5923352241516113,
+                -17.102367401123047
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Sphere.001",
+            "scale" : [
+                1.0193438529968262,
+                1.0193438529968262,
+                1.0193438529968262
+            ],
+            "translation" : [
+                0.03871692717075348,
+                -0.5001661777496338,
+                -0.05624667555093765
+            ]
+        },
+        {
+            "name" : "Sun",
+            "translation" : [
+                -1.5979496240615845,
+                3.3803811073303223,
+                -3.8834564685821533
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {}
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.699999988079071
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.003",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.07176056504249573,
+                    0.4135919511318207,
+                    0.8000000715255737,
+                    1
+                ],
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 3,
+                    "material" : 1
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 7,
+                        "NORMAL" : 8,
+                        "TEXCOORD_0" : 9
+                    },
+                    "indices" : 3,
+                    "material" : 2
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 559,
+            "max" : [
+                2.665040969848633,
+                2.66504168510437,
+                2.6650400161743164
+            ],
+            "min" : [
+                -2.6650390625,
+                -2.66504168510437,
+                -2.6650383472442627
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 559,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 559,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 2880,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 559,
+            "max" : [
+                2.614467144012451,
+                2.6144678592681885,
+                2.6144661903381348
+            ],
+            "min" : [
+                -2.6144652366638184,
+                -2.6144678592681885,
+                -2.614464521408081
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 559,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 559,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 559,
+            "max" : [
+                2.63356351852417,
+                2.6335642337799072,
+                2.6335625648498535
+            ],
+            "min" : [
+                -2.633561611175537,
+                -2.6335642337799072,
+                -2.6335608959198
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 559,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 559,
+            "type" : "VEC2"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 6708,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6708,
+            "byteOffset" : 6708
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4472,
+            "byteOffset" : 13416
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 5760,
+            "byteOffset" : 17888
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6708,
+            "byteOffset" : 23648
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6708,
+            "byteOffset" : 30356
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4472,
+            "byteOffset" : 37064
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6708,
+            "byteOffset" : 41536
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 6708,
+            "byteOffset" : 48244
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 4472,
+            "byteOffset" : 54952
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 59424,
+            "uri" : "Earth.bin"
+        }
+    ]
+}

@@ -1,16 +1,12 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.m {
+  margin-left: 10px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  padding-inline: 7px;
+  padding-bottom: 3px;
 }
 
-* {
-  box-sizing: border-box;
+.c {
+  padding-right: 0;
 }
