@@ -3,9 +3,13 @@ import Paragraph from '../Components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-
+import Image from 'next/image'
 import { BioSection, BioYear } from '../Components/bio.js'
 import Section from '../Components/section.js'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 
 function Page() {
   return (
@@ -25,7 +29,8 @@ function Page() {
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center">
-          <Image borderColor="whiteAlpha.800"
+          <Box
+            borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
             w="100px"
@@ -33,7 +38,17 @@ function Page() {
             display="inline-block"
             borderRadius="full"
             overflow='hidden'
-            src="/images/MyBird.png" />
+            alt="Profile Picture"
+          >
+            <ProfileImage
+              src="/images/MyBird.png"
+              alt="Profile image"
+              borderRadius='full'
+              width="100%"
+              height="100%"
+
+            />
+          </Box>
         </Box>
       </Box>
       <Section delay={0.1}>

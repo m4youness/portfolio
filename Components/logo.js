@@ -21,21 +21,21 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const LogoImage = `/images/logo${useColorModeValue('', '')}.png`
+  const LogoImage = "/images/logo.png"
 
   return (
     <Link href="/" scroll={false}>
       <a>
         <LogoBox>
           <Image src={LogoImage} width={25} height={25} alt="logo" />
-          <p
+          <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             className='m'
           >
             Mohamad Youness
-          </p>
+          </Text>
         </LogoBox>
       </a>
     </Link>
