@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem } from "@chakra-ui/react"
+import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem, chakra } from "@chakra-ui/react"
 import Paragraph from '../Components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
