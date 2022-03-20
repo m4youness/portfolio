@@ -32,8 +32,8 @@ function Page() {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="200px"
+            h="200px"
             display="inline-block"
             borderRadius="full"
             overflow='hidden'
