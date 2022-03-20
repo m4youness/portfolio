@@ -3,7 +3,6 @@ import Paragraph from '../Components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import Image from 'next/image'
 import { BioSection, BioYear } from '../Components/bio.js'
 import Section from '../Components/section.js'
 
