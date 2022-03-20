@@ -20,7 +20,7 @@ function Page() {
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Mohamad
+            Mohamad Youness
           </Heading>
           <p>Digital Craftsman ( 3D Artist / Developer / Animator )</p>
         </Box>
@@ -37,10 +37,9 @@ function Page() {
             display="inline-block"
             borderRadius="full"
             overflow='hidden'
-            alt="Profile Picture"
           >
             <ProfileImage
-              src="/images/MyBird.png"
+              src="public/images/MyBird.png"
               alt="Profile image"
               borderRadius='full'
               width="100%"
