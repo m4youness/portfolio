@@ -38,7 +38,7 @@ function Page() {
             borderRadius="full"
             overflow='hidden'
           >
-            <ProfileImage
+            <Image
               src="/images/MyBird.jpg"
               alt="Profile image"
               borderRadius='full'
