@@ -39,7 +39,7 @@ function Page() {
             overflow='hidden'
           >
             <ProfileImage
-              src="public/images/MyBird.png"
+              src="/images/MyBird.png"
               alt="Profile image"
               borderRadius='full'
               width="100%"
