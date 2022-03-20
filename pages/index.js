@@ -32,18 +32,18 @@ function Page() {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="200px"
-            h="200px"
+            w="100px"
+            h="100px"
             display="inline-block"
             borderRadius="full"
             overflow='hidden'
           >
             <ProfileImage
-              src="/images/MyBird.png"
+              src="/images/MyBird.jpg"
               alt="Profile image"
               borderRadius='full'
-              width="100%"
-              height="100%"
+              width="100vh"
+              height="100vh"
 
             />
           </Box>
