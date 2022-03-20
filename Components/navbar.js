@@ -74,6 +74,9 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
+                <NextLink href="https://github.com/Pixlerfrost/Portfolio-Website" passHref>
+                  <MenuItem as={Link}>Source code</MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>
