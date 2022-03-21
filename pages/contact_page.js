@@ -17,11 +17,21 @@ function Contact_Page() {
       <Input ref={register({
        required: {
         value: true,
-        message: 'You must enter your name!'
+        message: 'You must enter your Name'
        }
       })} placeholder='Name' variant="filled" mb={6} type="text" />
-      <Input ref={register} required placeholder='Email' variant="filled" mb={6} type="email" />
-      <Textarea ref={register} placeholder='Message' variant="filled" mb={6} />
+      <Input ref={register({
+       required: {
+        value: true,
+        message: 'You must enter your Email'
+       }
+      })} placeholder='Email' variant="filled" mb={6} type="email" />
+      <Textarea ref={register({
+       required: {
+        value: true,
+        message: 'You must enter a message!'
+       }
+      })} placeholder='Message' variant="filled" mb={6} />
       <Button colorScheme="teal" type='submit'>Send</Button>
      </form>
     </Flex>
