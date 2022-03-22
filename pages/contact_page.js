@@ -24,7 +24,7 @@ export function Contact_Page() {
  return (
   <Container>
    <Flex height="100vh" as="section-title">
-    <Flex direction="column" background={useColorModeValue('', '-dark')} p={12} rounded={6}>
+    <Flex direction="column" background={useColorModeValue('gray.100', '-dark')} p={12} rounded={6}>
      <form ref={form} onSubmit={sendEmail}>
       <Heading mb={6}>Contact Us</Heading>
       <Input background={useColorModeValue('gray.300')} name='name' id='name' placeholder='Name' variant="filled" mb={6} type="text" />
