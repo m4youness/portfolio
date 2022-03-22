@@ -24,13 +24,13 @@ export function Contact_Page() {
  return (
   <Container>
    <Flex height="100vh" as="section-title">
-    <Flex direction="column" background={useColorModeValue('gray.100', '-dark')} p={12} rounded={6}>
+    <Flex direction="column" m={5} background={useColorModeValue('gray.100', '-dark')} p={12} rounded={6}>
      <form ref={form} onSubmit={sendEmail}>
       <Heading mb={6}>Contact Us</Heading>
-      <Input background={useColorModeValue('gray.300')} name='name' id='name' placeholder='Name' variant="filled" mb={6} type="text" />
-      <Input background={useColorModeValue('gray.300')} name='email' id='email' placeholder='Email' variant="filled" mb={6} type="email" />
-      <Input background={useColorModeValue('gray.300')} name='subject' id='subject' placeholder='Subject' variant="filled" mb={6} type="text" />
-      <Textarea background={useColorModeValue('gray.300')} name='message' id='message' placeholder='Message' variant="filled" mb={6} />
+      <Input background={useColorModeValue('gray.200')} name='name' id='name' placeholder='Name' variant="filled" mb={6} type="text" />
+      <Input background={useColorModeValue('gray.200')} name='email' id='email' placeholder='Email' variant="filled" mb={6} type="email" />
+      <Input background={useColorModeValue('gray.200')} name='subject' id='subject' placeholder='Subject' variant="filled" mb={6} type="text" />
+      <Textarea background={useColorModeValue('gray.200')} name='message' id='message' placeholder='Message' variant="filled" mb={6} />
       <Button colorScheme="teal" type='submit' value="send">Send</Button>
      </form>
     </Flex>
