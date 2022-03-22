@@ -50,7 +50,7 @@ const Navbar = props => {
             <a className='b'>Posts</a>
           </NextLink>
           <NextLink href="/contact_page" >
-            <a className='b'>Contact us</a>
+            <a className='b'>Contact Us</a>
           </NextLink>
           <NextLink href="https://github.com/Pixlerfrost/Portfolio-Website">
             <a className='c'>Source</a>
@@ -76,6 +76,9 @@ const Navbar = props => {
                 </NextLink>
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <NextLink href="/contact_page" passHref>
+                  <MenuItem as={Link}>Contact Us</MenuItem>
                 </NextLink>
                 <NextLink href="https://github.com/Pixlerfrost/Portfolio-Website" passHref>
                   <MenuItem as={Link}>Source code</MenuItem>
