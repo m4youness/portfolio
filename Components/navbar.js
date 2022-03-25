@@ -52,7 +52,7 @@ const Navbar = props => {
           <NextLink href="/contact_page" >
             <a className='b'>Contact Us</a>
           </NextLink>
-          <NextLink href="https://github.com/Pixlerfrost/Portfolio-Website">
+          <NextLink href="https://github.com/Pixlerfrost/Portfolio">
             <a className='c'>Source</a>
           </NextLink>
           <IoLogoGithub />
