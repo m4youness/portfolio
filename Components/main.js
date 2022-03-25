@@ -20,7 +20,7 @@ const Main = ({ router, children }) => {
           <meta name="viewport" content="width=device-width, initial-scale=1 " />
           <title>Mohamad Youness - HomePage</title>
           <meta name="description" content="Mohamad's homepage" />
-          <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
+          <link rel="icon" href="/logo.png" type="image/x-icon" />
         </Head>
 
         <Navbar path={router.asPath} />
