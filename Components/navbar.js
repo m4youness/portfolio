@@ -80,7 +80,7 @@ const Navbar = props => {
                 <NextLink href="/contact_page" passHref>
                   <MenuItem as={Link}>Contact Us</MenuItem>
                 </NextLink>
-                <NextLink href="https://github.com/Pixlerfrost/Portfolio-Website" passHref>
+                <NextLink href="https://github.com/Pixlerfrost/Portfolio" passHref>
                   <MenuItem as={Link}>Source code</MenuItem>
                 </NextLink>
               </MenuList>
