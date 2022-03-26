@@ -30,6 +30,9 @@ function Works() {
    <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
     <Image src="/renders/triangle.png" />
    </Box>
+   <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
+    <Image src="/renders/render1.png" />
+   </Box>
 
   </Container>
  )
