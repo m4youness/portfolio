@@ -31,12 +31,15 @@ function Works() {
     <Image src="/renders/render0.png" />
    </Box>
    <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
+    <Image src="/renders/render4.png" />
+   </Box>
+   <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
     <Image src="/renders/render1.png" />
    </Box>
-    <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
+   <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
     <Image src="/renders/render2.png" />
    </Box>
-    <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
+   <Box borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" margin={3}>
     <Image src="/renders/render3.png" />
    </Box>
 
