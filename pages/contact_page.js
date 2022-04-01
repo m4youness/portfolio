@@ -1,8 +1,7 @@
-import { Button, Flex, Input, Heading, Container, useColorModeValue, Textarea, Badge } from '@chakra-ui/react'
+import { Button, Flex, Input, Heading, Container, useColorModeValue, Textarea, Alert, AlertIcon } from '@chakra-ui/react'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react'
-import { init } from '@emailjs/browser';
-init("NZRkaK2Sv2rlabx3F");
+
 
 export function Contact_Page() {
  const form = useRef();
@@ -18,8 +17,10 @@ export function Contact_Page() {
     console.log(error.text);
    });
   e.target.reset()
-  alert('Email Sent!')
+  alert('Email sent')
  };
+
+
 
 
 
@@ -37,7 +38,7 @@ export function Contact_Page() {
      </form>
     </Flex>
    </Flex>
-  </Container>
+  </Container >
  )
 }
 
