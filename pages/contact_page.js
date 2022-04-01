@@ -1,4 +1,4 @@
-import { Button, Flex, Input, Heading, Container, useColorModeValue, Textarea } from '@chakra-ui/react'
+import { Button, Flex, Input, Heading, Container, useColorModeValue, Textarea, Badge } from '@chakra-ui/react'
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react'
 import { init } from '@emailjs/browser';
@@ -13,10 +13,12 @@ export function Contact_Page() {
   emailjs.sendForm('service_k3o1pqk', 'template_ouyawmw', form.current, 'NZRkaK2Sv2rlabx3F')
    .then((result) => {
     console.log(result.text);
+
    }, (error) => {
     console.log(error.text);
    });
   e.target.reset()
+  alert('Email Sent!')
  };
 
 
