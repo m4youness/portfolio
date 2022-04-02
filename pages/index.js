@@ -51,7 +51,7 @@ function Page() {
       </Box>
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About me
         </Heading>
         <Paragraph>
           Mohamad Youness is a front-end developer thats based in the U.S. He is a passionate programmer and aspires to become a Freelancer. In his free time he likes to play sports and watch Anime/tv.
