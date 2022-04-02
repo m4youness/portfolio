@@ -19,7 +19,6 @@ export function Contact_Page() {
     console.log(error.text);
    });
   e.target.reset()
-  alert('Email sent')
  };
 
 
@@ -43,7 +42,7 @@ export function Contact_Page() {
        <PopoverContent>
         <Alert status='success'>
          <AlertIcon />
-         Data uploaded to the server. Fire on!
+         Email sent!
         </Alert>
        </PopoverContent>
       </Popover>
