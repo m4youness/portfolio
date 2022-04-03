@@ -39,7 +39,6 @@ function Page() {
           display="inline-block"
           borderRadius="full"
           overflow='hidden'
-          ml={0}
         >
           <ProfileImage
             src="/images/favicon2.ico"
