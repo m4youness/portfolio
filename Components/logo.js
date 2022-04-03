@@ -20,7 +20,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const logoImage = '/images/favicon.ico'
+  const logoImage = `/images/favicon${useColorModeValue('', '-dark')}.ico`
 
   return (
     <Link href="/" scroll={false}>
