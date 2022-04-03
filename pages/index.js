@@ -22,7 +22,7 @@ function Page() {
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
-          <p>Digital Specialist ( 3D Artist / Developer / Animator )</p>
+          <p>Digital Specialist ( 3D Artist | Developer | Animator )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -39,6 +39,7 @@ function Page() {
           display="inline-block"
           borderRadius="full"
           overflow='hidden'
+          ml={0}
         >
           <ProfileImage
             src="/images/favicon2.ico"
