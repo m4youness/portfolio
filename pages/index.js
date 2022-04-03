@@ -1,4 +1,4 @@
-import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem, chakra, } from "@chakra-ui/react"
+import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem, chakra, Text } from "@chakra-ui/react"
 import Paragraph from '../Components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
@@ -22,7 +22,7 @@ function Page() {
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
-          <p>Digital Specialist {''} [3D Artist / Developer / Animator]</p>
+          <Text>Digital Specialist[ 3D Artist / Developer / Animator ]</Text>
         </Box>
         <Box
           flexShrink={0}
