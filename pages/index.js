@@ -22,7 +22,7 @@ function Page() {
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
-          <Text>Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
+          <Text isTruncated>Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
         </Box>
         <Box
           flexShrink={0}
