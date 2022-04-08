@@ -13,7 +13,7 @@ const ProfileImage = chakra(Image, {
 function Page() {
   return (
     <Container>
-      <Box borderRadius="lg" bg={useColorModeValue('#ffffff40', 'whiteAlpha.200')} p={3} mb={6} align="center">
+      <Box borderRadius="lg" bg={useColorModeValue('#ffffff40', 'whiteAlpha.200')} style={{ backdropFilter: 'blur(10px' }} p={3} mb={6} align="center">
         Hello, I'm a front-end developer based in the U.S!
       </Box>
 
