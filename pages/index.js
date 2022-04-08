@@ -14,7 +14,7 @@ function Page() {
   return (
     <Container>
       <Box borderRadius="lg" bg={useColorModeValue('#ffffff40', 'whiteAlpha.200')} style={{ backdropFilter: 'blur(10px' }} p={3} mb={6} align="center">
-        Hello, I'm a front-end developer based in the U.S!
+        Hello, I&apos;m a front-end developer based in the U.S!
       </Box>
 
       <Box display={{ md: 'flex' }}>
