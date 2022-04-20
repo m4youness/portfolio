@@ -31,7 +31,7 @@ export function Contact_Page() {
       toast({
        title: 'Success',
        description: "Your Email has been sent!",
-       status: 'success',
+       status: 'error',
        duration: 9000,
        isClosable: true,
       })
