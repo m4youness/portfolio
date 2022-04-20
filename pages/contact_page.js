@@ -14,6 +14,29 @@ export function Contact_Page() {
   emailjs.sendForm('service_k3o1pqk', 'template_ouyawmw', form.current, 'NZRkaK2Sv2rlabx3F')
    .then((result) => {
     console.log(result.text);
+    if (result.status == 200) {
+     return (
+      toast({
+       title: 'Success',
+       description: "Your Email has been sent!",
+       status: 'success',
+       duration: 9000,
+       isClosable: true,
+      })
+     )
+    }
+
+    if (!result.status == 200) {
+     return (
+      toast({
+       title: 'Success',
+       description: "Your Email has been sent!",
+       status: 'success',
+       duration: 9000,
+       isClosable: true,
+      })
+     )
+    }
 
    }, (error) => {
     console.log(error.text);
@@ -35,15 +58,8 @@ export function Contact_Page() {
       <Input background={useColorModeValue('#ffffff40')} name='email' id='email' placeholder='Email' variant="filled" mb={6} type="email" />
       <Input background={useColorModeValue('#ffffff40')} name='subject' id='subject' placeholder='Subject' variant="filled" mb={6} type="text" />
       <Textarea background={useColorModeValue('#ffffff40')} name='message' id='message' placeholder='Message' variant="filled" mb={6} />
-      <Button colorScheme="teal" type='submit' value="send" onClick={() =>
-       toast({
-        title: 'Success',
-        description: "Your Email has been sent!",
-        status: 'success',
-        duration: 9000,
-        isClosable: true,
-       })
-      }>Send</Button>
+      <Button colorScheme="teal" type='submit' value="send"
+      >Send</Button>
      </form>
     </Flex>
    </Flex>
