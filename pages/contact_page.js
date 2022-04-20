@@ -18,7 +18,7 @@ export function Contact_Page() {
      return (
       toast({
        title: 'Success',
-       description: "Your Email has been sent!",
+       description: "Your Email has been sent! We will be in contact soon.",
        status: 'success',
        duration: 9000,
        isClosable: true,
@@ -29,8 +29,8 @@ export function Contact_Page() {
     if (!result.status == 200) {
      return (
       toast({
-       title: 'Success',
-       description: "Your Email has been sent!",
+       title: 'Error',
+       description: "Something went wrong! Your email wasn't sent.",
        status: 'error',
        duration: 9000,
        isClosable: true,
