@@ -26,7 +26,7 @@ export function Contact_Page() {
      )
     }
 
-    if (!result.status == 200) {
+    if (!result.text === OK) {
      return (
       toast({
        title: 'Error',
