@@ -14,7 +14,7 @@ export function Contact_Page() {
   emailjs.sendForm('service_k3o1pqk', 'template_ouyawmw', form.current, 'NZRkaK2Sv2rlabx3F')
    .then((result) => {
     console.log(result.text);
-    if (result.status == 200) {
+    if (result.text === OK) {
      return (
       toast({
        title: 'Success',
