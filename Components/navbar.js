@@ -46,9 +46,6 @@ const Navbar = props => {
           <NextLink href="/works" >
             <a className='a'>Works</a>
           </NextLink>
-          <NextLink href="/posts" >
-            <a className='b'>Posts</a>
-          </NextLink>
           <NextLink href="/contact_page" >
             <a className='b'>Contact Us</a>
           </NextLink>
