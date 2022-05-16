@@ -18,7 +18,7 @@ function Page() {
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
-          <Text fontSize={{base: 13, md: 16}}>Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
+          <Text fontSize={{base: 14, md: 16}}>Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
         </Box>
       </Box>
 
