@@ -1,16 +1,21 @@
-import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem, chakra, Text } from "@chakra-ui/react"
+import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem, chakra, Text, useToast } from "@chakra-ui/react"
 import Paragraph from '../Components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 import { BioSection, BioYear } from '../Components/bio.js'
 import Section from '../Components/section.js'
+import { IoLogoDiscord } from "react-icons/io5";
+
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
 })
 
 function Page() {
+
+  const toast = useToast()
+
   return (
     <Container>
       <Box borderRadius="lg" bg={useColorModeValue('#ffffff40', 'whiteAlpha.200')} style={{ backdropFilter: 'blur(10px' }} p={3} mb={6} align="center">
@@ -18,7 +23,7 @@ function Page() {
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
-          <Text fontSize={{base: 14, md: 16}}>Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
+          <Text fontSize={{base: 13, md: 16}} >Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
         </Box>
       </Box>
 
@@ -28,11 +33,11 @@ function Page() {
           About me
         </Heading>
         <Paragraph>
-          Mohamad Youness is a front-end developer thats based in the U.S. He is a passionate programmer and aspires to become a Freelancer. In his free time he likes to play sports and watch Anime/tv. 
+          Mohamad Youness is a front-end developer based in the U.S. He is a passionate programmer and aspires to become a Freelancer. In his free time he likes to play sports and watch Anime/tv. 
         </Paragraph>
         <Box align="center" my={4}>
           <Link href="/contact_page" scroll={false} passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" >
               Contact me
             </Button>
           </Link>
@@ -66,25 +71,25 @@ function Page() {
           I ♥
         </Heading>
         <Paragraph>
-          Art,
+          Art
         </Paragraph>
         <Paragraph>
-          Music,
+          Music
         </Paragraph>
         <Paragraph>
-          Playing Flute,
+          Playing Flute
         </Paragraph>
         <Paragraph>
-          3d Animating/Modeling,
+          3d Animating/Modeling
         </Paragraph>
         <Paragraph>
-          Machine Learning,
+          Machine Learning
         </Paragraph>
         <Paragraph>
-          Coding,
+          Coding
         </Paragraph>
         <Paragraph>
-          FootBall/Soccer,
+          FootBall/Soccer
         </Paragraph>
         <Paragraph>
           Wrestling
@@ -100,7 +105,7 @@ function Page() {
             <Link href="https://github.com/Pixlerfrost" target="_blank" passHref>
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="gray"
                 leftIcon={<IoLogoGithub />}
               >
                 GitHub
@@ -111,23 +116,30 @@ function Page() {
             <Link href="https://twitter.com/Pixlerfrost" target="_blank" passHref>
               <Button
                 variant="ghost"
-                colorScheme="teal"
+                colorScheme="blue"
                 leftIcon={<IoLogoTwitter />}
               >
                 Twitter
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/mohamad__youness" target="_blank" passHref>
+          <ListItem>     
               <Button
                 variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoInstagram />}
+                colorScheme="purple"
+                leftIcon={<IoLogoDiscord/>}
+                onClick={() =>
+                  toast({
+                    position: 'bottom-left',
+                    title: 'Discord Information',
+                    description: "Add me on Discord, Pixlerfrost#3174",
+                    duration: 9000,
+                    isClosable: true,
+                  })
+                }
               >
-                Instagram
+                Discord
               </Button>
-            </Link>
           </ListItem>
         </List>
       </Section>
