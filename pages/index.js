@@ -131,8 +131,7 @@ function Page() {
                 onClick={() =>
                   toast({
                     position: 'bottom-left',
-                    title: 'Discord Information',
-                    description: "Add me on Discord, Pixlerfrost#3174",
+                    title: 'Pixlerfrost#3174',
                     duration: 9000,
                     isClosable: true,
                   })
