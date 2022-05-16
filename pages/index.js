@@ -14,52 +14,26 @@ function Page() {
   return (
     <Container>
       <Box borderRadius="lg" bg={useColorModeValue('#ffffff40', 'whiteAlpha.200')} style={{ backdropFilter: 'blur(10px' }} p={3} mb={6} align="center">
-        Hello, I'm a front-end developer based in the U.S!
-      </Box>
-
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
+      <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
           <Text fontSize="15px">Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
         </Box>
-        <Box
-          flexShrink={0}
-          mt={{ base: 4, md: 0 }}
-          ml={{ md: 6 }}
-          textAlign="center"
-        />
-        <Box
-          borderColor="whiteAlpha.800"
-          borderWidth={2}
-          borderStyle="solid"
-          w="100px"
-          h="100px"
-          display="inline-block"
-          borderRadius="full"
-          overflow='hidden'
-        >
-          <ProfileImage
-            src="/images/favicon2.ico"
-            alt="Profile image"
-            borderRadius='full'
-            width="100%"
-            height="100%"
-          />
-        </Box>
       </Box>
+
+   
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
         <Paragraph>
-          Mohamad Youness is a front-end developer thats based in the U.S. He is a passionate programmer and aspires to become a Freelancer. In his free time he likes to play sports and watch Anime/tv.
+          Mohamad Youness is a front-end developer thats based in the U.S. He is a passionate programmer and aspires to become a Freelancer. In his free time he likes to play sports and watch Anime/tv. 
         </Paragraph>
         <Box align="center" my={4}>
-          <Link href="/works" scroll={false} passHref>
+          <Link href="/contact_page" scroll={false} passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+              Contact me
             </Button>
           </Link>
         </Box>
