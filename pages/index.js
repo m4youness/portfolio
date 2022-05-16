@@ -130,14 +130,6 @@ function Page() {
             </Link>
           </ListItem>
         </List>
-
-        <Box align="center" my={4}>
-          <Link href="/posts" scroll={false} passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My posts
-            </Button>
-          </Link>
-        </Box>
       </Section>
     </Container >
   )
