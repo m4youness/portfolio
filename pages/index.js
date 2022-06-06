@@ -61,7 +61,7 @@ function Page() {
           Started Coding in Java.
         </BioSection>
         <BioSection>
-          <BioYear>Mid 2019 to present</BioYear>
+          <BioYear>2019 to present</BioYear>
           Learned Python, Html, Css, JavaScript, Django and a couple of JavaScript Frameworks.
         </BioSection>
       </Section>
