@@ -58,11 +58,7 @@ function Page() {
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
-          Started Coding in Java.
-        </BioSection>
-        <BioSection>
-          <BioYear>2019 to present</BioYear>
-          Learned Python, Html, Css, JavaScript, Django and a couple of JavaScript Frameworks.
+          Started Coding.
         </BioSection>
       </Section>
 
