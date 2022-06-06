@@ -74,25 +74,19 @@ function Page() {
           Art
         </Paragraph>
         <Paragraph>
-          Music
-        </Paragraph>
-        <Paragraph>
-          Playing Flute
-        </Paragraph>
-        <Paragraph>
           3d Animating/Modeling
         </Paragraph>
         <Paragraph>
-          Machine Learning
+        Anime
         </Paragraph>
         <Paragraph>
           Coding
         </Paragraph>
         <Paragraph>
-          FootBall/Soccer
+          Sports
         </Paragraph>
-        <Paragraph>
-          Wrestling
+<Paragraph>
+          Cooking
         </Paragraph>
       </Section>
 
