@@ -33,7 +33,7 @@ function Page() {
           About me
         </Heading>
         <Paragraph>
-          Mohamad Youness is a front-end developer based in the U.S. He is a passionate programmer and aspires to become a Freelancer. In his free time he likes to play sports and watch Anime/tv. 
+          I am a front-end developer based in the U.S. I am a passionate programmer and I aspires to become a Freelancer in either Programming on 3d Modeling. In my free time I like to play sports and watch Anime/tv. 
         </Paragraph>
         <Box align="center" my={4}>
           <Link href="/contact_page" scroll={false} passHref>
