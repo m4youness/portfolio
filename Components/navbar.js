@@ -13,7 +13,8 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Link
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from '../Components/theme-toggle-button'
@@ -43,15 +44,15 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <NextLink href="/works" >
-            <a className='a'>Works</a>
-          </NextLink>
-          <NextLink href="/contact_page" >
-            <a className='b'>Contact Us</a>
-          </NextLink>
-          <NextLink href="https://github.com/Pixlerfrost/Portfolio">
-            <a className='c'>Source</a>
-          </NextLink>
+          <Link className='a' href="/works" >
+            Works
+          </Link>
+          <Link className='b' href="/contact_page" >
+            Contact Us
+          </Link>
+          <Link className='c' href="https://github.com/Pixlerfrost/Portfolio">
+            Source
+          </Link>
           <IoLogoGithub />
 
 
