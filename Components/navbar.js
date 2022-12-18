@@ -46,10 +46,10 @@ const Navbar = props => {
         >
           <NextLink href="/works" >
             <a className='a'>Works</a>
-          </Link>
+          </NextLink>
           <NextLink href="/contact_page" >
             <a className='b'>Contact Us</a>
-          </Link>
+          </NextLink>
           <NextLink href="https://github.com/Pixlerfrost/Portfolio">
              <a className='c'>Source</a>
           </NextLink>
