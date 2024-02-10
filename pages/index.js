@@ -33,7 +33,7 @@ function Page() {
           About me
         </Heading>
         <Paragraph>
-          I am a front-end developer based in the U.S. I am a passionate programmer and I aspires to become a Freelancer in either Programming or 3d Modeling. In my free time I like to play sports and watch Anime/tv. 
+          I am a front-end developer based in Lebanon. I am a passionate programmer and I aspires to become a software developer.
         </Paragraph>
         <Box align="center" my={4}>
           <Link href="/contact_page" scroll={false} passHref>
@@ -53,11 +53,7 @@ function Page() {
           Born in Lebanon, Beirut.
         </BioSection>
         <BioSection>
-          <BioYear>2014</BioYear>
-          Started getting into all sorts of Technology, like Robots, Electrical Circuits etc.
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
+          <BioYear>2021</BioYear>
           Started Coding.
         </BioSection>
       </Section>
@@ -71,9 +67,6 @@ function Page() {
         </Paragraph>
         <Paragraph>
           3d Animating/Modeling
-        </Paragraph>
-        <Paragraph>
-        Anime
         </Paragraph>
         <Paragraph>
           Coding
