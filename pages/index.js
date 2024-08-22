@@ -1,43 +1,57 @@
-import { Box, Container, Heading, Image, useColorModeValue, Button, List, ListItem, chakra, Text, useToast } from "@chakra-ui/react"
-import Paragraph from '../Components/paragraph'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Link from 'next/link'
-import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
-import { BioSection, BioYear } from '../Components/bio.js'
-import Section from '../Components/section.js'
+import {
+  Box,
+  Container,
+  Heading,
+  useColorModeValue,
+  Button,
+  List,
+  ListItem,
+  Text,
+  useToast,
+} from "@chakra-ui/react";
+import Paragraph from "../Components/paragraph";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import Link from "next/link";
+import { IoLogoGithub } from "react-icons/io5";
+import { BioSection, BioYear } from "../Components/bio.js";
+import Section from "../Components/section.js";
 import { IoLogoDiscord } from "react-icons/io5";
 
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
-
 function Page() {
-
-  const toast = useToast()
+  const toast = useToast();
 
   return (
     <Container>
-      <Box borderRadius="lg" bg={useColorModeValue('#ffffff40', 'whiteAlpha.200')} style={{ backdropFilter: 'blur(10px' }} p={3} mb={6} align="center">
-      <Box flexGrow={1}>
+      <Box
+        borderRadius="lg"
+        bg={useColorModeValue("#ffffff40", "whiteAlpha.200")}
+        style={{ backdropFilter: "blur(10px" }}
+        p={3}
+        mb={6}
+        align="center"
+      >
+        <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Mohamad Youness
           </Heading>
-          <Text fontSize={{base: 13, md: 16}} >Digital Specialist [ 3D Artist / Developer / Animator ]</Text>
+          <Text fontSize={{ base: 13, md: 16 }}>
+            Software Developer | Programmer | Technical Specialist
+          </Text>
         </Box>
       </Box>
 
-   
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           About me
         </Heading>
         <Paragraph>
-          I am a front-end developer based in Lebanon. I am a passionate programmer and I aspires to become a software developer.
+          I am a passionate software developer with a strong focus on building
+          full-stack applications using modern technologies as well as embedded
+          systems with low level languages.{" "}
         </Paragraph>
         <Box align="center" my={4}>
           <Link href="/contact_page" scroll={false} passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" >
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Contact me
             </Button>
           </Link>
@@ -52,31 +66,16 @@ function Page() {
           <BioYear>2008</BioYear>
           Born in Lebanon, Beirut.
         </BioSection>
-        <BioSection>
-          <BioYear>2021</BioYear>
-          Started Coding.
-        </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
         </Heading>
-        <Paragraph>
-          Art
-        </Paragraph>
-        <Paragraph>
-          3d Animating/Modeling
-        </Paragraph>
-        <Paragraph>
-          Coding
-        </Paragraph>
-        <Paragraph>
-          Sports
-        </Paragraph>
-<Paragraph>
-          Cooking
-        </Paragraph>
+        <Paragraph>Coding</Paragraph>
+        <Paragraph>Anime</Paragraph>
+        <Paragraph>Sports</Paragraph>
+        <Paragraph>Cooking</Paragraph>
       </Section>
 
       <Section delay={0.3}>
@@ -85,7 +84,7 @@ function Page() {
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/Pixlerfrost" target="_blank" passHref>
+            <Link href="https://github.com/m4youness" target="_blank" passHref>
               <Button
                 variant="ghost"
                 colorScheme="gray"
@@ -96,37 +95,26 @@ function Page() {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/Pixlerfrost" target="_blank" passHref>
-              <Button
-                variant="ghost"
-                colorScheme="blue"
-                leftIcon={<IoLogoTwitter />}
-              >
-                Twitter
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>     
-              <Button
-                variant="ghost"
-                colorScheme="purple"
-                leftIcon={<IoLogoDiscord/>}
-                onClick={() =>
-                  toast({
-                    position: 'bottom-left',
-                    title: 'Pixlerfrost#3174',
-                    duration: 9000,
-                    isClosable: true,
-                  })
-                }
-              >
-                Discord
-              </Button>
+            <Button
+              variant="ghost"
+              colorScheme="purple"
+              leftIcon={<IoLogoDiscord />}
+              onClick={() =>
+                toast({
+                  position: "bottom-left",
+                  title: "Pixlerfrost#3174",
+                  duration: 9000,
+                  isClosable: true,
+                })
+              }
+            >
+              Discord
+            </Button>
           </ListItem>
         </List>
       </Section>
-    </Container >
-  )
+    </Container>
+  );
 }
 
-export default Page
+export default Page;
