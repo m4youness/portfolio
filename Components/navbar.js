@@ -1,5 +1,4 @@
 import NextLink from "next/link";
-
 import {
   Container,
   Box,
@@ -20,13 +19,16 @@ import Logo from "../Components/logo";
 import { IoLogoGithub } from "react-icons/io5";
 
 const Navbar = (props) => {
+  const linkColor = useColorModeValue("black", "white");
+  const bgColor = useColorModeValue("#ffffff40", "whiteAlpha.50");
+
   return (
     <Box
-      position="fixed "
+      position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue("#ffffff40", "whiteAlpha.50")}
-      style={{ backdropFilter: "blur(10px" }}
+      bg={bgColor}
+      style={{ backdropFilter: "blur(10px)" }}
       zIndex={1}
       {...props}
     >
@@ -51,19 +53,27 @@ const Navbar = (props) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <NextLink href="/works">
-            <a className="a">Works</a>
-          </NextLink>
-          <NextLink href="/contact_page">
-            <a className="b">Contact Us</a>
-          </NextLink>
-          <NextLink href="https://github.com/m4youness/portfolio">
-            <a className="c">Source</a>
-          </NextLink>
-          <IoLogoGithub />
+          <Stack
+            direction={{ md: "row" }}
+            display={{ md: "flex" }}
+            width={{ md: "45" }}
+            alignItems="center"
+          >
+            <NextLink href="/contact_page" passHref>
+              <Link color={linkColor} _focus={{ boxShadow: "none" }}>
+                Contact Me
+              </Link>
+            </NextLink>
+            <NextLink href="https://github.com/m4youness/portfolio" passHref>
+              <Link color={linkColor} ml={3} _focus={{ boxShadow: "none" }}>
+                Source
+              </Link>
+            </NextLink>
+            <IoLogoGithub color={linkColor} />
+          </Stack>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} textAlign="right">
           <ThemeToggleButton />
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu isLazy id="navbar-menu">
@@ -74,17 +84,18 @@ const Navbar = (props) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
                 <NextLink href="/contact_page" passHref>
-                  <MenuItem as={Link}>Contact Us</MenuItem>
+                  <MenuItem as={Link} _focus={{ boxShadow: "none" }}>
+                    Contact Me
+                  </MenuItem>
                 </NextLink>
                 <NextLink
                   href="https://github.com/m4youness/portfolio"
                   passHref
                 >
-                  <MenuItem as={Link}>Source code</MenuItem>
+                  <MenuItem as={Link} _focus={{ boxShadow: "none" }}>
+                    Source code
+                  </MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

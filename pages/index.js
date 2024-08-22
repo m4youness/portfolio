@@ -12,10 +12,9 @@ import {
 import Paragraph from "../Components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Link from "next/link";
-import { IoLogoGithub } from "react-icons/io5";
+import { IoLogoGithub, IoLogoDiscord, IoLogoInstagram } from "react-icons/io5";
 import { BioSection, BioYear } from "../Components/bio.js";
 import Section from "../Components/section.js";
-import { IoLogoDiscord } from "react-icons/io5";
 
 function Page() {
   const toast = useToast();
@@ -25,7 +24,7 @@ function Page() {
       <Box
         borderRadius="lg"
         bg={useColorModeValue("#ffffff40", "whiteAlpha.200")}
-        style={{ backdropFilter: "blur(10px" }}
+        style={{ backdropFilter: "blur(10px)" }}
         p={3}
         mb={6}
         align="center"
@@ -110,6 +109,21 @@ function Page() {
             >
               Discord
             </Button>
+          </ListItem>
+          <ListItem>
+            <Link
+              href="https://www.instagram.com/mohamad__youness"
+              target="_blank"
+              passHref
+            >
+              <Button
+                variant="ghost"
+                colorScheme="pink"
+                leftIcon={<IoLogoInstagram />}
+              >
+                Instagram
+              </Button>
+            </Link>
           </ListItem>
         </List>
       </Section>

@@ -15,7 +15,7 @@ function Works() {
             variant="unstyled"
             colorScheme="teal"
             leftIcon={<IoLogoGithub />}
-            pl={l}
+            pl={1}
           >
             Github
           </Button>
