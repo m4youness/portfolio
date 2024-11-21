@@ -39,7 +39,7 @@ const Navbar = (props) => {
           </Heading>
         </Flex>
 
-        <Box flex={1} textAlign="right">
+        <Box flex={1} textAlign="right" pr={3}>
           <ThemeToggleButton />
         </Box>
       </Container>
