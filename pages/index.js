@@ -44,17 +44,17 @@ function Page() {
           About me
         </Heading>
         <Paragraph>
-          I am a passionate software developer with a strong focus on building
-          full-stack applications using modern technologies as well as embedded
-          systems with low level languages.{" "}
+          I am a software developer with experience in web development, a keen
+          interest in assembly language, low-level embedded systems and
+          languages.{" "}
         </Paragraph>
-        <Box align="center" my={4}>
-          <Link href="/contact_page" scroll={false} passHref>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Contact me
-            </Button>
-          </Link>
-        </Box>
+        {/* <Box align="center" my={4}> */}
+        {/*   <Link href="/contact_page" scroll={false} passHref> */}
+        {/*     <Button rightIcon={<ChevronRightIcon />} colorScheme="teal"> */}
+        {/*       Contact me */}
+        {/*     </Button> */}
+        {/*   </Link> */}
+        {/* </Box> */}
       </Section>
 
       <Section delay={0.2}>
@@ -101,7 +101,7 @@ function Page() {
               onClick={() =>
                 toast({
                   position: "bottom-left",
-                  title: "Pixlerfrost#3174",
+                  title: "m4youness#3174",
                   duration: 9000,
                   isClosable: true,
                 })

@@ -59,11 +59,11 @@ const Navbar = (props) => {
             width={{ md: "45" }}
             alignItems="center"
           >
-            <NextLink href="/contact_page" passHref>
-              <Link color={linkColor} _focus={{ boxShadow: "none" }}>
-                Contact Me
-              </Link>
-            </NextLink>
+            {/* <NextLink href="/contact_page" passHref> */}
+            {/*   <Link color={linkColor} _focus={{ boxShadow: "none" }}> */}
+            {/*     Contact Me */}
+            {/*   </Link> */}
+            {/* </NextLink> */}
             <NextLink href="https://github.com/m4youness/portfolio" passHref>
               <Link color={linkColor} ml={3} _focus={{ boxShadow: "none" }}>
                 Source
@@ -84,11 +84,11 @@ const Navbar = (props) => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/contact_page" passHref>
-                  <MenuItem as={Link} _focus={{ boxShadow: "none" }}>
-                    Contact Me
-                  </MenuItem>
-                </NextLink>
+                {/* <NextLink href="/contact_page" passHref> */}
+                {/*   <MenuItem as={Link} _focus={{ boxShadow: "none" }}> */}
+                {/*     Contact Me */}
+                {/*   </MenuItem> */}
+                {/* </NextLink> */}
                 <NextLink
                   href="https://github.com/m4youness/portfolio"
                   passHref
