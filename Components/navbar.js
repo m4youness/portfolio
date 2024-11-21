@@ -45,33 +45,21 @@ const Navbar = (props) => {
             <Logo />
           </Heading>
         </Flex>
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          display={{ base: "none", md: "flex" }}
-          width={{ base: "full", md: "auto" }}
-          alignItems="center"
-          flexGrow={1}
-          mt={{ base: 4, md: 0 }}
-        >
-          <Stack
-            direction={{ md: "row" }}
-            display={{ md: "flex" }}
-            width={{ md: "45" }}
-            alignItems="center"
-          >
-            {/* <NextLink href="/contact_page" passHref> */}
-            {/*   <Link color={linkColor} _focus={{ boxShadow: "none" }}> */}
-            {/*     Contact Me */}
-            {/*   </Link> */}
-            {/* </NextLink> */}
-            <NextLink href="https://github.com/m4youness/portfolio" passHref>
-              <Link color={linkColor} ml={3} _focus={{ boxShadow: "none" }}>
-                Source
-              </Link>
-            </NextLink>
-            <IoLogoGithub color={linkColor} />
-          </Stack>
-        </Stack>
+        {/* <Stack */}
+        {/*   direction={{ base: "column", md: "row" }} */}
+        {/*   display={{ base: "none", md: "flex" }} */}
+        {/*   width={{ base: "full", md: "auto" }} */}
+        {/*   alignItems="center" */}
+        {/*   flexGrow={1} */}
+        {/*   mt={{ base: 4, md: 0 }} */}
+        {/* > */}
+        {/*   <Stack */}
+        {/*     direction={{ md: "row" }} */}
+        {/*     display={{ md: "flex" }} */}
+        {/*     width={{ md: "45" }} */}
+        {/*     alignItems="center" */}
+        {/*   ></Stack> */}
+        {/* </Stack> */}
 
         <Box flex={1} textAlign="right">
           <ThemeToggleButton />
@@ -83,21 +71,6 @@ const Navbar = (props) => {
                 variant="outline"
                 aria-label="Options"
               />
-              <MenuList>
-                {/* <NextLink href="/contact_page" passHref> */}
-                {/*   <MenuItem as={Link} _focus={{ boxShadow: "none" }}> */}
-                {/*     Contact Me */}
-                {/*   </MenuItem> */}
-                {/* </NextLink> */}
-                <NextLink
-                  href="https://github.com/m4youness/portfolio"
-                  passHref
-                >
-                  <MenuItem as={Link} _focus={{ boxShadow: "none" }}>
-                    Source code
-                  </MenuItem>
-                </NextLink>
-              </MenuList>
             </Menu>
           </Box>
         </Box>

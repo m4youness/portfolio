@@ -10,7 +10,6 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import Paragraph from "../Components/paragraph";
-import { ChevronRightIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import { IoLogoGithub, IoLogoDiscord, IoLogoInstagram } from "react-icons/io5";
 import { BioSection, BioYear } from "../Components/bio.js";
@@ -46,15 +45,9 @@ function Page() {
         <Paragraph>
           I am a software developer with experience in web development, a keen
           interest in assembly language, low-level embedded systems and
-          languages.{" "}
+          languages. <br />I am constantly exploring new technologies to improve
+          my skills.
         </Paragraph>
-        {/* <Box align="center" my={4}> */}
-        {/*   <Link href="/contact_page" scroll={false} passHref> */}
-        {/*     <Button rightIcon={<ChevronRightIcon />} colorScheme="teal"> */}
-        {/*       Contact me */}
-        {/*     </Button> */}
-        {/*   </Link> */}
-        {/* </Box> */}
       </Section>
 
       <Section delay={0.2}>
