@@ -33,7 +33,7 @@ function Page() {
             Mohamad Youness
           </Heading>
           <Text fontSize={{ base: 13, md: 16 }}>
-            Software Developer | Programmer | Technical Specialist
+            Software Development | Embedded Systems | Deep Learning
           </Text>
         </Box>
       </Box>
